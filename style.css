@@ -1,0 +1,237 @@
+*
+::after
+::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+}
+
+.main-header{
+    max-width: 100%;
+    top: 0;
+    height: 80vh;
+    position: relative;
+    background-color: #010122;
+    border-bottom-left-radius: 100px;
+}
+
+.main-header .sub-header{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.logo .logo-text{
+    font-family: 'Noto Sans', sans-serif;
+    border-right: 2px solid white;
+    padding-right: 1.7rem;
+    font-size: 18px;
+    
+}
+
+.sub-header nav ul{
+    display: flex;
+    flex: 1;
+    gap: 1.9rem;
+    list-style: none;
+}
+.sub-header nav{
+    position: relative;
+    left: -10rem;
+}
+
+.search-icon{
+    background-color: #2c2c2e;
+    border-radius: 100px;
+    padding: 1rem;
+    padding-block: 0.7rem;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-header .right-nav {
+    max-width: 30%;
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    flex: 1;
+    gap: 1.8rem;
+
+}
+
+.btn {
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding-inline: 0.4rem;
+    padding-block: 10px;
+}
+
+.body-txt-form{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 4rem;
+    gap: 8rem;
+    justify-self: start;
+}
+
+.text h1{
+    font-size: 40px;
+    font-style: italic;
+
+}
+
+.botton .agent{
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding-inline: 1.2rem;
+    padding-block: 14px;
+    color: #2c2c2e;
+}
+
+.botton .call{
+    border-radius: 50px;
+    background-color: #010122;
+    text-align: center;
+    font-size: 14px;
+    padding-inline: 1.2rem;
+    padding-block: 14px;
+    color: white;
+}
+
+.botton{
+    padding-top: 1.7rem;
+}
+
+
+.last-text{
+    position: relative;
+    padding: 4rem;
+    color: #010122;
+}
+
+.follow{
+    margin-top: 17px;
+    gap: 1rem;
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+}
+
+.follow .follow-text{
+    font-family:  'Noto Sans', sans-serif;
+    font-size: 17px;
+}
+
+.body-txt-form .form-section{
+    background-color: #fff;
+    max-width: 80%;
+    height: 100vh;
+    padding: 4rem;
+}
+
+.form-section form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    
+}
+
+form .input-one input[type= 'text'], 
+select,  
+textarea,
+input[type= 'botton'] {
+    border: none;
+}
+
+
+form .input-one input[type= 'text']:focus,  
+textarea:focus,
+input[type= 'botton']:focus{
+
+    padding: 1rem;
+    width: 340px;
+    outline: 2px solid #010122;
+}
+
+form .input-one input[type= 'text']::placeholder,   
+textarea::placeholder{
+    font-family: inherit;
+    font-size: small;
+}
+
+input[type= 'botton']
+{
+    background-color: #010122;
+    text-align: center;
+    font-size: 14px;
+    padding-inline: 1.2rem;
+    padding-block: 14px;
+    color: white;
+}
+
+/* Responsive */
+
+@media (max-width : 1050px) {
+
+    .sub-header nav ul{
+        display: none;
+        
+    }
+
+@media (max-width: 915px) {
+    .botton{
+        padding-top: 0.2rem;
+    }
+
+    .body-txt-form{
+        grid-template-columns: repeat(2,1fr);
+        padding: 1rem;
+        gap: 4rem;
+    }
+    
+    .text h1{
+        font-size: 30px;
+        font-style: italic;
+    
+    }
+}
+
+@media (max-width: 721px) {
+    .body-txt-form{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0.5rem;
+        gap: 2rem;
+    }
+    
+    .text h1{
+        font-size: 20px;
+        font-style: italic;
+    
+    }
+
+    
+}
+   
+    
+}
+
